@@ -2,6 +2,10 @@
 ## functions do
 
 ## Creates an object that can cache the inverse of a matrix and return the cached version on demand.
+# I extended the included sample to allow it to handle multiple matrices by having a seperate list so that it can
+# store multiple results instead of just caching one.
+
+# The code I use to create a unique key is marginal but works for this simple assignment.
 makeCacheMatrix <- function(x = matrix()) {
   k <- list()  
   
